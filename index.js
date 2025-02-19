@@ -108,9 +108,7 @@ const userData =
   
 
 const showUserData = () => {
-    // const response = await fetch(`userData.json`)
-    // const data = await response.json()
-    // console.log(data)
+    
     
     showUser.innerHTML = ``
 
@@ -261,11 +259,11 @@ layout.addEventListener('change', (e)=> {
     const selectLayout = e.target.value
 
     if(selectLayout === 'image1'){
-        chat.style.backgroundImage = `url("image1.jpg")`;
+        chat.style.backgroundImage = `url("images/image1.jpg")`;
     }else if(selectLayout === 'image2'){
-        chat.style.backgroundImage = `url("image2.jpg")`;
+        chat.style.backgroundImage = `url("images/image2.jpg")`;
     }else if(selectLayout === 'image3'){
-        chat.style.backgroundImage = `url("image3.jpg")`;
+        chat.style.backgroundImage = `url("images/image3.jpg")`;
     }
 })
 
