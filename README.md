@@ -23,5 +23,5 @@ A live demo of the app can be accessed at (insert your demo link if available).
 
 ## Demo
 
-You can see the live demo of the Chat App here: [Demo Link](https://yourusername.github.io/chat-app/)
+You can see the live demo of the Chat App here: [Demo Link](https://rushikeshd1.github.io/Chat_app/)
 
