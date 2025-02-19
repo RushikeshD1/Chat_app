@@ -1,0 +1,257 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.left_side{
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid rgb(212, 210, 210);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(132, 172, 172);
+}
+
+.left_data{
+    overflow-y: scroll;
+    height: calc(100vh - (10px + 10px));
+}
+
+.left_data::-webkit-scrollbar{
+    width: 2px;
+}
+
+.left_info{
+    width: 100%;
+    border-bottom: 1px solid rgb(212, 210, 210);
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.info_left{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    gap:10px;
+}
+
+.info_left span{
+    font-size: 12px;
+}
+
+.image_size{
+    width: 15%;
+    height: 50px;
+    border-radius: 130px;
+}
+
+header h1{
+    font-size: 24px;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;   
+    position: relative;
+}
+
+
+.menu_bar{
+   
+    width: 180px;
+    border: 2px solid black;
+    z-index: 100;
+    position: absolute;
+    top: 30px;
+    left: -120px;
+    padding: 5px;
+    background-color: white;    
+}
+
+.toggle_de{
+    display: none;
+}
+
+.toggle_de.show{
+    display: block;
+}
+
+#theme{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#layout{
+    width: 100%;
+}
+
+.mt_icon{
+    margin-top: 1px;  
+    cursor: pointer;  
+}
+
+.right_side{
+    width: 70%;
+    height: 100vh;
+    border-left: 2px solid rgb(212, 210, 210);
+}
+
+.right_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    height: cal(100vh - (10px + 10px));
+    /* border:  2px solid black; */
+    
+}
+
+
+.info{
+    width: 100%;
+    height: 80px;
+    /* border:  2px solid black; */
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 10px 50px;
+    color: black;
+}
+
+.info_img{
+    width: 60px;
+    height: 60px;    
+}
+
+.info_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.info_prof{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chat{
+    width: 100%;
+    height: 410px;
+    /* border:  2px solid black; */
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    color: black;
+}
+
+.get{
+    font-size: 14px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gettt{
+    font-size: 14px;
+    padding: 10px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text_1{
+    
+    background-color: rgb(228, 230, 230);
+    padding: 10px;
+    /* border: 2px solid black; */
+    align-self: flex-start;
+}
+
+.text_2{
+    
+    max-width: 600px;
+    margin-left: auto;
+    background-color: rgb(132, 172, 172); 
+    padding: 10px; 
+    color: white;  
+}
+
+.searchInput{
+    width: 100%;
+    /* height: calc(100vh - 490px); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 20px;
+    align-items: center;
+    /* border:  2px solid black; */
+}
+
+.search_1{
+    color: blue;
+    width: 100%;
+    border-top: 1px solid rgb(230, 227, 227);
+    padding: 5px;
+}
+
+.search_in{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.searchInput input{
+    width: 90%;
+    height: 50px;
+    padding: 0px 20px;
+    outline: none;
+    border: none;
+    
+    /* border:  2px solid black; */
+}
+
+.searchInput button{
+    width: 8%;
+    height: 30px;
+    background-color: rgb(132, 172, 172);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.searchInput button:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 425px){
+    .container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    
+}
